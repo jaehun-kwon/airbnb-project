@@ -102,7 +102,7 @@ public class AjaxController {
 		return result;
 	}
 	
-	
+	// 이메일 로그인(기본로그인)
 	@PostMapping(value = "/emailLogin", produces = "application/json; charset=utf-8")
 	public String emailLogin(@RequestBody MemberDTO dto, HttpSession session) throws JsonProcessingException {
 		String emailLogin = memberService.emailLogin(dto);
@@ -112,7 +112,7 @@ public class AjaxController {
 
 		return json;
 	}
-	// 이메일 입력 시 패스워드 입력 기능 
+	// 이메일 입력 시 패스워드 입력
 	@PostMapping(value = "/emailPassword", produces = "application/json; charset=utf-8")
 	public String emailPassword(@RequestBody MemberDTO dto, HttpSession session) throws Exception {
 		MemberDTO login = memberService.login(dto);
@@ -122,6 +122,7 @@ public class AjaxController {
 		String json = om.writeValueAsString(login);
 		return json;
 	}
+	// 회원가입
 	@PostMapping("/join")
 	public String join(@RequestBody MemberDTO dto) throws Exception  {
 		int row = memberService.airBnBJoin(dto);
@@ -130,14 +131,16 @@ public class AjaxController {
 		
 		return json;
 	}
-	// 비밀번호 찾기 화면으로 가는 화면
+	// 비밀번호 찾기(get)
 	@GetMapping("/findPW")
 	public void findPW() {
 	}
-	// 회원가입 창
+	// 회원가입 창(get)
 	@GetMapping("/airBnBJoin")
 	public void airBnBJoin() {
 	}
+	
+	// 이름 수정(get)
 	@GetMapping(value = "/update_name", produces = "application/json; charset=utf-8")
 	public String update_name(HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -149,7 +152,7 @@ public class AjaxController {
 		return json;
 	}
 
-
+	// 이름 수정(post)
 	@PostMapping(value = "/update_name", produces = "application/json; charset=utf-8")
 	public String update_name(@RequestBody MemberDTO dto, HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -161,6 +164,8 @@ public class AjaxController {
 		
 		return json;
 	}
+	
+	// 닉네임 수정(get)
 	@GetMapping(value = "/update_nickname", produces = "application/json; charset=utf-8")
 	public String update_nickname(HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -172,6 +177,8 @@ public class AjaxController {
 	
 		return json;
 	}
+	
+	// 닉네임 수정(post)
 	@PostMapping(value = "/update_nickname", produces = "application/json; charset=utf-8")
 	public String update_nickname(@RequestBody MemberDTO dto, HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -183,6 +190,8 @@ public class AjaxController {
 		
 		return json;
 	}
+	
+	// 생일 수정(get)
 	@GetMapping(value = "/update_birth", produces = "application/json; charset=utf-8")
 	public String update_birth(HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -193,6 +202,7 @@ public class AjaxController {
 		
 		return json;
 	}
+	// 생일 수정(post)
 	@PostMapping(value = "/update_birth", produces = "application/json; charset=utf-8")
 	public String update_birth(@RequestBody MemberDTO dto, HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -204,6 +214,8 @@ public class AjaxController {
 		
 		return json;
 	}
+	
+	// 이메일 수정(get)
 	@GetMapping(value = "/update_email", produces = "application/json; charset=utf-8")
 	public String update_email(HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -214,6 +226,7 @@ public class AjaxController {
 
 		return json;
 	}
+	// 이메일 수정(post)
 	@PostMapping(value = "/update_email", produces = "application/json; charset=utf-8")
 	public String update_email(@RequestBody MemberDTO dto, HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -225,6 +238,7 @@ public class AjaxController {
 		
 		return json;
 	}
+	// 핸드폰 번호 수정(get)
 	@GetMapping(value = "/update_phone", produces = "application/json; charset=utf-8")
 	public String update_phone(HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -235,6 +249,7 @@ public class AjaxController {
 		
 		return json;
 	}
+	// 핸드폰 번호 수정(post)
 	@PostMapping(value = "/update_phone", produces = "application/json; charset=utf-8")
 	public String update_phone(@RequestBody MemberDTO dto, HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -246,6 +261,7 @@ public class AjaxController {
 		
 		return json;
 	}
+	// 비밀번호 수정(get)
 	@GetMapping(value = "/password_update", produces = "application/json; charset=utf-8")
 	public String password_update_get(MemberDTO dto ,HttpSession session) throws Exception {
 		MemberDTO update = (MemberDTO) session.getAttribute("login");
@@ -256,6 +272,8 @@ public class AjaxController {
 	
 		return json;
 	}
+	
+	// 비밀번호 수정(post)
 	@PostMapping(value = "/password_update", produces = "application/json; charset=utf-8")
 	public String password_update(@RequestBody MemberDTO dto, HttpSession session) throws Exception {
 		int row =memberService.update_password(dto);
