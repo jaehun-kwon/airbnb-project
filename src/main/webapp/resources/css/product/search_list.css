@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+#map {
+	position: absolute;
+	right:0; 
+	top: 156px;
+	width: 50%;
+	height:85vh;
+}
+.product_main {min-height: 85vh; width:50%; display: flex;}
+
+.search_result_section {
+	width: 100%;
+	padding: 0 24px;
+	overflow: scroll;
+	min-height: 85vh;
+	max-height: 85vh;
+	-ms-overflow-style: none;
+}
+.search_result_section::-webkit-scrollbar {display: none;}
+
+.product_list_head > p {padding-top: 18px;}
+.product_list_head > p:last-child {margin-bottom: 18px;}
+
+.product_list {border-bottom: 1px solid #dadada;}
+
+.product_list .product_item {
+	display: flex;
+	
+	height: 250px;
+	padding: 18px 0;
+	border-top: 1px solid #dadada;
+}
+.h_i_img {position: relative; width: 300px; height: 200px; align-self: center;}
+.h_i_img > img {
+	width: 300px;
+	height: 200px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.h_i_desc {
+	position: relative;
+	margin-left: 16px;
+	padding: 10px 0;
+
+	font-size: 16px;	
+	color: #717171;
+	width: 100%;
+}
+.h_i_desc > div:nth-chile(2) {font-size: 14px;}
+.h_i_desc > div:nth-child(3) {
+	font-size: 18px;
+	color: black;
+	width: 200px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.h_i_desc > div:last-child {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	
+	height: 50%;
+	padding-bottom: 5px;
+}
+.h_i_desc > div:last-child > span:last-child {
+	float: right;
+	font-size: 18px;
+	color: black;	
+}
+
+.product_under_line {
+	border-bottom: 1px solid rgb(221, 221, 221);
+	margin: 11px 0;
+	
+	width: 30px;
+	height: 0;
+}
+.wish_heart {
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	
+	cursor: pointer;
+	color: white;
+}
+.wish_heart:hover {background-color: none;}
+.h_i_desc .wish_heart:hover {background-color: #f7f7f7;}
+
+.product_list_footer {
+	height: 130px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product_list_footer > div {
+	height: 35px;
+	width: 35px;
+	
+	margin: 0 8px;
+
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	
+	border: 1px solid white;
+	border-radius: 50%;
+}
+.product_list_footer > div:hover{border: 1px solid black; cursor: pointer;}
+
+.arrowPagingDiv {
+	font-size: 20px;
+	line-height: 30px !important;
+}
+
+/* 토글용 */
+.selectPage {background-color: black; color: white;}

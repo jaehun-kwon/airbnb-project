@@ -1,0 +1,53 @@
+@charset "utf-8";
+.calendar_div {
+	width: 800px;
+	min-height: 460px !important;
+}
+.calendarList {
+	display: flex;
+	justify-content: center;
+}
+.calendar {
+	padding: 27px;
+	font-size: 12px;
+}
+.navigation {
+	position: relative;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+.navigation > a {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.navigation > a:last-child {right: 0;}
+.navigation > a:hover {background-color: #f7f7f7;}
+.this_month {margin: 0 auto; font-size: 16px;}
+
+.calendar_body * {text-align: center;}
+.calendar_body .date {font-size: 14px; font-weight: bold;}
+.day {
+	width: 100px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #717171;
+}
+.yesterday {opacity: 0.25;}
+.dateValue {display: none;}
+
+.calendar_body td {height: 45px; width: 45px; border-radius: 50%;}
+.calendar_body > tbody td:not(.emptyDay):not(.yesterday):hover
+{border: 1px solid black; cursor: pointer;}
+
+/* 토글용 */
+.selectDate {background-color: black !important; color: white !important;}
+.selectedList {background: rgb(247, 247, 247);}

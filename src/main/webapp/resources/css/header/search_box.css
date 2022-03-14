@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+.search {
+	min-width: 348px;
+}
+
+.search_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	height:32px;
+	width: 32px;
+	
+	margin: 7px 7px 7px 0;
+	padding: 10px;
+	
+	background-color: #ff385c;
+	border-radius: 50%;
+	color: white;
+}
+.bigSearch_icon {
+	position: absolute;
+	height: 45px;
+	width: 45px;
+	
+	right: 10px;
+	top: 10px;
+}
+.bigSearch_icon:hover {cursor:pointer; background: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%);}
+
+.hidden_submit, .disabled_box{display:none !important;}
+
+.search_box {
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    
+    min-width: 200px;
+    max-width: 450px;
+    cursor: pointer;
+    
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%);
+    justify-content: space-between;
+}
+.search_box > span {
+	min-width: 100px;
+	padding: 0 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    text-align: center;
+}
+.search_box > .header_filter_line {
+	height: 24px;
+	margin: 0;
+}
+.detail_search {
+	position:absolute;
+	z-index: 1;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+    max-width: none;
+    width: 100%;
+    height: 0;
+	border-bottom: 1px solid #dadada;
+    background-color: inherit;
+	
+	visibility: hidden;
+
+	transition-property: height;
+    transition-duration: 0.3s;
+}
+.detail_search > form {
+	position: relative;
+}
+
+.detail_box {
+	max-width: 850px;
+	min-width: 650px;
+	height: 66px;
+			
+	border-radius: 33px;
+	cursor: default;
+	background-color: white;
+}
+
+.detail_box > *:not(.header_filter_line):not(label){
+	color: black;
+	position: relative;
+	
+	width: 100%;
+	height: 100%;
+	padding: 14px 32px;
+	cursor: pointer;
+	
+	border-radius: 33px;
+}
+.detail_box > *:not(.header_filter_line):hover{background-color: #ebebeb;}
+.detail_box > *:not(.header_filter_line):not(.d_b_guestCount) > :first-child, .d_b_guestCount > div:first-child > :first-child 
+{font-size: 12px;}
+.detail_box input:not(.hidden_input) {
+	width: 100%;
+	height: 14px;
+		
+	margin-top: 5px;
+	font-size: 13px;
+	border: 0;
+	background-color: inherit;
+	cursor: pointer;
+	
+	font-weight: bold;
+}
+.detail_box input::placeholder {font-weight: normal;}
+.detail_box input:focus {outline: none;}
+.hidden_input {
+	position:absolute;
+	width:0;
+	height:0;
+	border:0;
+	padding: 0;
+}
+
+.d_b_guestCount {
+	position: relative;
+	
+	display: flex;
+	align-items: center;
+	
+}
+.countArea {
+	display: flex;
+	justify-content: space-between;
+	width: 330px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding: 16px 4px;
+}
+.countArea:last-child {border: 0;}
+.countArea > div:first-child > p:first-child {font-size: 16px;}
+.countArea > div:first-child > p:last-child {font-weight: normal; color: #717171;}
+
+.countArea > div:last-child {display:flex; justify-content:space-between; align-items: center; width: 104px;}
+.countArea > div:last-child > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	border: 1px solid rgb(176, 176, 176);
+	background-color: white;
+	border-radius: 50%;
+	color: rgb(113, 113, 113);
+	
+	width: 32px;
+	height: 32px;
+	
+	cursor: pointer;
+}
+.countArea > div:last-child > button:hover {color: black; border-color: black;}
+.countArea > div:last-child > button:disabled {
+	color: rgb(235, 235, 235) !important;
+	border-color: rgb(235, 235, 235) !important;
+	cursor: no-drop;
+}
+
+.booking_box_choose > .detail_box > *:not(.header_filter_line):hover{background-color: unset;}
+.booking_box_choose > .detail_box {
+	display: flex;
+	min-width: 0;
+	max-width: inherit;
+	height: 50%;
+	border-radius: 0;
+	font-size: 12px;
+}
+.booking_box_choose > .detail_box:first-child {
+	border-bottom: 1px solid #dadada;
+	border-radius: 10px 10px 0 0 / 10px 10px 0 0;
+}
+.booking_box_choose > .detail_box:last-child {
+	border-radius: 0 0 10px 10px / 0 0 10px 10px;
+}
+.booking_box_choose > .detail_box:first-child > * {
+	width: 50%;
+	border-radius: 0;
+}
+.booking_box_choose > .detail_box:first-child > :nth-child(2) {
+	border-right: 1px solid #dadada;
+}
+.booking_box_choose > .detail_box > * {
+	padding: 12px 12px;
+}
+
+.b_b_checkIn .hidden_div {left: -495px;}
+.b_b_checkOut .hidden_div {left: -629px;}
+.b_b_guestCount .hidden_div {top:70px; left: -75px;}
+.b_b_selected {border-right: 0 !important; width: 100% !important;}
+
+/* 토글용 */
+.rgb247 {background-color: rgb(247, 247, 247);}
+.bs0510 {box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px; background-color: white !important;}

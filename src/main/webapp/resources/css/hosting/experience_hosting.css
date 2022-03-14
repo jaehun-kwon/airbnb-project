@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.one_box{
+	min-width:1080px;
+	max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    height:100vh;
+}
+
+.experience_hosting_title{
+	display: flex;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.experience_hosting_intro_box{
+	width: 800px;
+	border:1px solid darkgrey;
+	border-radius: 15px;
+	
+}
+.hosting_intro_box_title{
+	font-size: 30px;
+	font-weight: bold;
+	padding:20px;
+}
+.hidden{
+	display: none;
+}
+
+.hosting_intro_box_second_title{
+	display:flex;
+	font-size: 25px;
+	padding:20px;
+}
+.line{
+	border-bottom: 1px solid darkgrey;
+	padding :20px 10px;
+	margin:0px 20px;
+}
+.exp_hosting_form_box{
+	display: flex;
+	justify-content: center;
+}
+.exp_hosting_input_name{
+	width:300px;
+	height: 40px;
+	font-size: 20px;
+	margin:10px;
+	border:0px;
+	border-bottom:1px solid darkgrey;
+}
+.exp_hosting_input_style{
+	width:300px;
+	height: 40px;
+	font-size: 20px;
+	margin:10px;
+	border:0px;
+	border-bottom:1px solid darkgrey;
+}
+.exp_hosting_input_intro{
+	margin:10px;
+	font-size: 18px;
+	border-radius: 20px;
+	padding:20px;
+	
+}
+.exp_hosting_money{
+	position: relative;
+    left: -60px;
+}
+.exp_hosting_category{
+	border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.exp_hosting_category_title{
+    background: white;
+    color:darkgray;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.exp_hosting_Btn{
+	color: white;
+    width: 580px;
+    height: 48px;
+    margin-left: 10px;
+    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}

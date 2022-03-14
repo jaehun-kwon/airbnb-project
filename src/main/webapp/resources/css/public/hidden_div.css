@@ -1,0 +1,28 @@
+@charset "utf-8";
+.hidden_div {
+	position: absolute;
+	
+	cursor: auto;
+ 	visibility: hidden;
+	padding: 20px;
+	
+	top: 55px;
+	left: 0;
+	
+	min-width: 340px;
+	min-height: 130px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	overflow: hidden;
+	
+	z-index: 500;
+}
+
+.detail_box .hidden_div {top: 75px;}
+.d_b_checkIn .hidden_div {left: -188px;}
+.d_b_checkOut .hidden_div {left: -400px;}
+.d_b_guestCount .hidden_div {left: -150px;}
+
+/* 토글용 */
+.visible_div {visibility: visible;}

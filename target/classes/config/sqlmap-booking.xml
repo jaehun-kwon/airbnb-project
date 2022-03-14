@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+	"-//mybatis.org/DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.itbank.booking.BookingDAO">
+	<insert id="insertBookingHouse" parameterType="BookingHouseDTO">
+		insert into booking_house (selector, name, start_date, end_date)
+        	values (#{selector}, #{name}, #{start_date}, #{end_date})
+	</insert>
+	<insert id="insertBookingActivity" parameterType="BookingActivityDTO">
+		insert into booking_activity (selector, name, selected_date, count_person)
+        	values (#{selector}, #{name}, #{selected_date}, #{count_person})
+	</insert>
+	
+	<select id="selectBookingHouseList" parameterType="HashMap" resultType="BookingHouseDTO">
+		select * from booking_house
+			where selector=#{userName} and name=#{houseName}
+	</select>
+	<select id="selectBookingActivityList" parameterType="HashMap" resultType="BookingActivityDTO">
+		select * from booking_activity
+			where selector=#{userName} and name=#{activityName}
+	</select>
+	
+	<select id="selectBookingHouse" resultType="BookingHouseDTO" parameterType="String">
+		select *
+			from(
+				select * from booking_house
+					where selector=#{selector}
+					order by idx desc
+				)
+			where rownum=1
+	</select>
+	<select id="selectBookingActivity" resultType="BookingActivityDTO" parameterType="String">
+		select *
+			from(
+				select * from booking_activity
+					where selector=#{selector}
+					order by idx desc
+				)
+			where rownum=1
+	</select>
+	
+	<update id="updateBookingHouseStatus" parameterType="Integer">
+		update booking_house set status='확정' where idx=#{idx}
+	</update>
+	<update id="updateBookingActivityStatus" parameterType="Integer">
+		update booking_activity set status='확정' where idx=#{idx}
+	</update>
+</mapper>

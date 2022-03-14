@@ -1,0 +1,402 @@
+@charset "UTF-8";
+.first_box{
+	min-width:1080px;
+	max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    height:100vh;
+}
+.all_box{
+	margin:0px 420px;
+	width:auto;
+	padding:0px 24px;
+	min-width:1080px;
+}
+.account_title_box{
+	margin-top:40px;
+	margin-bottom: 40px;
+	
+}
+.account_title{
+	font-size: 32px;
+	line-height:36px;
+	font-weight: 600;
+	color: rgb(34,34,34);
+}
+.account_info{
+	font-size: 18px;
+    line-height: 24px;
+    color: rgb(34,34,34);
+}
+.account_info span{
+	font-size:18px;
+}
+.account_info_name{
+	font-weight: 600;
+	
+}
+.account_info_info_email{
+	
+}
+.account_info_profile{
+	text-decoration: underline;
+}
+.account_info_profile a{
+	font-size : 18px;
+	font-weight: 600;
+	
+}
+
+
+.account_profile_card{
+	width:100%;
+	height:156px;
+	box-shadow: 0px 6px 16px rgb(0 0 0/12%);
+	margin: 8px 0px;
+	padding :16px;
+	border-radius: 12px;
+	text-decoration: none;
+	display: block;
+}
+.account_profile_card_privacy{
+	font-size: 16px;
+	line-height: 20px;
+	color:#222222;
+	font-weight: 600;
+	margin-bottom: 13px;
+    margin-top: 30px;
+}
+.account_profile_card_privacy_num{
+	line-height: 18px;
+	color:#717171;
+}
+.account_profile_card_size{
+	padding:0px 8px;
+	width:33.3333333333333333333%;	
+}
+
+/*----------------------계정  > 개인정보 presonal_info----------------------------------------------------------------- */
+.personal_load{
+	font-size: 14px;
+	font-weight : 600;
+    line-height: 24px;
+    color: rgb(34,34,34);
+}
+.personal_info_update_box{
+	width:58.33333%;
+	float: left;
+}
+.personal_info_update_list{
+	border-bottom: 1px solid rgb(235,235,235)
+}
+.personal_info_update_one{
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.personal_info_update_contents{
+	display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    flex: 1 1 0% !important;
+    width: 100% !important;
+}
+.psersonal_info_update_contents_one{
+	font-size: 16px;
+	line-height: 20px;
+}
+.personal_info_update_contents_one_title{
+	font-size: 1em;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0px;
+}
+.personal_info_update_contents_two{
+	color :rgb(113,113,113);
+	margin-top : 4px;
+	margin-bottom: 16px;
+	font-size:14px;
+	line-height: 18px;
+}
+.personal_info_update_btn{
+	background: transparent;
+	border: 0px;
+	cursor:pointer;
+	margin:0px;
+	padding: 0px;
+	color: rgb(34,34,34);
+	text-decoration: underline;
+	font-weight: 600;
+}
+.personal_info_update_btn_two{
+	background: transparent;
+	border: 0px;
+	cursor:pointer;
+	margin:0px;
+	padding: 0px;
+	color: rgb(34,34,34);
+	text-decoration: underline;
+	font-weight: 600;
+}
+.update_explanation{
+	width: 33.3333%;
+    float: left;
+    margin-left: 8.33333%;
+}
+.update_explanation_box{
+	border: 1px solid rgb(221,221,221);
+	border-radius: 12px;
+	padding: 24px;
+}
+.update_explanation_text{
+	margin-top: 16px;
+	font-size: 20px;
+	font-weight: 800;
+}
+.update_explanation_text_explanation{
+	margin-top: 16px;
+	font-size: 16px;
+	color:rgb(113,113,113);
+}
+.update_explanation_box_line{
+	border-bottom: 1px solid rgb(221,221,221);
+	margin: 32px 0px;
+}
+.update_name_btn{
+	cursor:pointer;
+	margin-top:16px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	border-radius: 8px;
+	padding: 14px 24px;
+	border: none;
+	background: rgb(34,34,34);
+	color:rgb(255,255,255);
+}
+.update_btn:hover{
+	background: black;
+}
+
+/*----------------------계정  > 로그인 보안 login_and_security----------------------------------------------------------------- */
+
+.login_title{
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1.25em;
+	color:rgb(72,72,72);
+	padding-top:2px;
+	padding-bottom: 2px;
+}
+.security_update{
+	display: flex;
+	justify-content: space-between;
+}
+.security_update_title{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.375em;
+	color: rgb(72,72,72);
+}
+.security_update_btn{
+	border:0px;
+	background-color: white;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.375em;
+	color:rgb(0,132,137);
+	cursor: pointer;
+}
+.security_line{
+	margin-top: 32px;
+	border-top: 1px solid rgb(235,235,235);
+	padding-top: 24px;
+}
+.security_delete_btn{
+	border:0px;
+	background-color: white;
+	font-size:16px;
+	line-height: 1.375em;
+	color:#D93900;
+	cursor: pointer;
+}
+.password_update_title{
+	font-size: 16px;
+	padding:15px 0px;
+	color:gray;
+}
+.password_update_btn{
+	cursor:pointer;
+	margin-top:16px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	border-radius: 8px;
+	padding: 14px 24px;
+	border: none;
+	background: rgb(0,135,137);
+	color:white;	
+}
+.passwordInput_plus{
+	padding-left:10px;
+	padding-right:10px;
+	display: flex;
+	justify-content: center;
+	width:100%;
+	height:56px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+.passwordInput_another{
+	padding-left:10px;
+	padding-right:10px;
+	display: flex;
+	justify-content: center;
+	width:100%;
+	height:56px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+	
+.security_update_btn_cancel{
+	border:0px;
+	background-color: white;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.375em;
+	color:rgb(0,132,137);
+	cursor: pointer;
+}
+/*----------------------계정  > 프로필 user_show ----------------------------------------------------------------- */
+.user_show_box{
+	padding-left:16px;
+	padding-right:16px;
+	margin-top: 48px;
+	margin-bottom: 32px;
+	display: flex;
+}
+.user_img_info_box{
+	border: 1px solid rgb(221,221,221);
+	border-radius: 12px;
+	text-align: center;
+}
+
+.user_show_img_line{
+	border-bottom-width: 1px;
+    border-bottom-style: solid ;
+    border-bottom-color: #EBEBEB;
+    padding : 35px;
+}
+.user_show_certification_box{
+	padding :35px;
+}
+.user_img_info_box_second{
+	padding-top:20px;
+}
+.user_show_certification{
+	display: flex;
+}
+.user_show_profile_box{
+	margin-left:50px;
+}
+.user_show_box_intro{
+	margin-bottom: 48px;
+}
+.user_show_profile_update_btn{
+	border : 0px;
+	padding-top:20px;
+	background-color: white;
+	font-weight: bold;
+	font-size:15px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.user_show_profile_homeandjob{
+	display: flex;
+	align-items: center;
+}
+.user_show_profile_hometown{
+	padding-left :15px;
+	font-size:16px;
+}
+.update_btn_opt{
+	display: flex;
+	justify-content: space-between;
+}
+.intro_update_cancel{
+	font-size : 20px;
+	background-color: white;
+	border:0px;
+	cursor: pointer;
+	padding-top:20px
+}
+.intro_update_save{
+	font-size : 20px;
+	background-color:white;
+	border:0px;
+	padding-top:20px;
+	cursor:pointer;
+}
+
+
+/*--------------------계정 > 프로필 > 사진업데이트-----------------------------------------------*/
+.update_profile_img_box{
+	border: 1px solid gray;
+	border-radius: 10px;
+	width:700px;
+	height:200px;
+	padding-left:10px
+}
+.update_img_form{
+	padding-top:50px;
+}
+.update_profile_img{
+}
+.update_profile_img_save{
+	width:80%;
+	height:48px;
+	margin-top:20px;
+	border-radius:10px;
+	color:white;
+	font-size:16px;
+	font-weight: bold;
+	background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+	cursor: pointer;
+	border: none;
+}
+/*----------------------계정  > 로그인 보안 > 게정 비활성화----------------------------------------------------------------- */
+.delete_title{
+	text-align: center;
+}
+.delete_intro{
+	padding-top:10px;
+	font-size:22px;
+	margin-bottom:18px;
+}
+.delete_btn{
+	width:80%;
+	height:48px;
+	margin-top:20px;
+	border-radius:10px;
+	color:white;
+	font-size:16px;
+	font-weight: bold;
+	background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+	cursor: pointer;
+	border: none;
+}
+.delete_btn:hover{
+	border :3px solid black;
+}
+
+
+
+
+
+
+
+
+
+

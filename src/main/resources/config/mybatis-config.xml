@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+	"-//mybatis.org//DTD Config 3.0//EN"
+ 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 	
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="false"/>
+		<setting name="useGeneratedKeys" value="false"/>
+		<setting name="mapUnderscoreToCamelCase" value="false"/>
+	</settings>
+	
+	<typeAliases>
+		<typeAlias type="com.itbank.house.HouseDTO" alias="houseDTO"/>
+		<typeAlias type="com.itbank.activity.ActivityDTO" alias="activityDTO"/>
+		<typeAlias type="com.itbank.member.MemberDTO" alias="memberDTO"/>
+		<typeAlias type="com.itbank.review.ReviewHouseDTO" alias="reviewHouseDTO"/>
+		<typeAlias type="com.itbank.review.ReviewActivityDTO" alias="reviewActivityDTO"/>
+		<typeAlias type="com.itbank.booking.BookingHouseDTO" alias="BookingHouseDTO"/>
+		<typeAlias type="com.itbank.booking.BookingActivityDTO" alias="BookingActivityDTO"/>
+		<typeAlias type="com.itbank.wish.WishDTO" alias="wishDTO"/>
+	</typeAliases>
+</configuration>

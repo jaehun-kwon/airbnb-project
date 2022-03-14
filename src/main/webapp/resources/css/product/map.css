@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.hidden {
+	display: none;
+}
+.marker {
+	width: 80px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #fff;
+    font-weight: 900;
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px #888;
+    text-align: center;
+}
+.info {
+	width: 270px;
+	height: 300px;
+	background-color: #fff;
+	box-sizing: border-box;
+	border-radius: 30px;
+	overflow: hidden;
+	border: 1px solid #888;
+}
+.info > div {
+	margin: 0;
+	padding: 0;
+	width: inherit;
+}
+.info > .info_img {
+	height: 160px;
+}
+.info > .info_img img {
+	width: inherit;
+	height: inherit;
+}
+.info > .info_explan {
+	height: 110px;
+	margin: 15px 0;
+}
+.info > .info_explan > div {
+	margin: 5px 10px;
+}
+.info > .info_explan > .info_e_review {
+	font-size: 12px;
+	width: 90px;	/*리뷰 구현한 이후 70px로 변경*/
+}
+.info > .info_explan > .info_e_category {
+	width: 121px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 7px;
+}
+.info > .info_explan > .info_e_name {
+	width: 190px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info > .info_explan > .info_e_price {
+	font-size: 16px;
+	font-weight: 900;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

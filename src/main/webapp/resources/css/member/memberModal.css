@@ -1,0 +1,262 @@
+/*------------------------이메일 로그인-------------------------------------*/
+.modalLogin{
+	padding:22px;
+}
+.loginWelcome{
+	font-size:22px;
+	margin-bottom:18px;
+}
+.loginInput{
+	padding-left:10px;
+	width:100%;
+	height:56px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+.loginBtn{
+	width:100%;
+	height:48px;
+	margin-top:20px;
+	margin-bottom:24px;
+	border-radius:10px;
+	color:white;
+	font-size:16px;
+	font-weight: bold;
+	background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+	cursor: pointer;
+	border: none;
+}
+
+.email_Logout{
+	padding:0px;
+}
+
+.logout{
+	display:block;
+	padding:15px 15px;
+}
+
+.boundary{
+	text-align: center;
+	
+}
+.line_first{
+	border-bottom:1px solid #EBEBEB;
+	width:240px;
+}
+.line_second{
+	border-bottom:1px solid #EBEBEB;
+	width :240px;
+	float:right;
+	position: relative;
+	top:-20px;
+}
+.line_text{
+	position:relative;
+	top:-10px;
+}
+/*--------------------비밀번호-----------------------------------------*/
+
+.passwordInput{
+	padding-left:10px;
+	width:100%;
+	height:56px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+.passwordBtn{
+	width:100%;
+	height:48px;
+	margin-top:20px;
+	margin-bottom:24px;
+	border-radius:10px;
+	color:white;
+	font-size:16px;
+	font-weight: bold;
+	background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+	cursor: pointer;
+	border: none;
+}
+.findPWBtn{
+	border: 0px;
+	background-color: white;
+	cursor: pointer;
+	font-weight: 600;
+	text-decoration: underline;
+	
+}
+.findExplain{
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #484848;
+}
+.findPWEmail{
+	padding-left:10px;
+	width:100%;
+	height:56px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+.postEmailBtn{
+	width:100%;
+	height:48px;
+	margin-top:20px;
+	border:0px;
+	border-radius:10px;
+	color:rgb(255,255,255);
+	font-size:16px;
+	font-weight:600;
+	background:rgb(34,34,34) ;
+	cursor: pointer;
+}
+.postEmailBtn:hover{
+	background:rgb(0,0,0);
+}
+
+/*--------------------회원가입-----------------------------------------*/
+.joinInput{
+	padding-left:10px;
+	padding-right:10px;
+	display: flex;
+	justify-content: center;
+	width:100%;
+	height:56px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+.joinBtn{
+	width:100%;
+	height:48px;
+	margin-top:20px;
+	margin-bottom:24px;
+	border-radius:10px;
+	color:white;
+	font-size:16px;
+	font-weight: bold;
+	background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+	cursor: pointer;
+	border: none;
+}
+.joinExplain{
+	color: rgb(113,113,113);
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 400;
+	padding-top: 8px;
+	
+}
+.lineUp{
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.joinWelcome{
+	font-size: 22px;
+	line-height: 26px;
+	color:rgb(34,34,34);
+	font-weight: 600;
+	margin-top:8px;
+	margin-bottom: 8px;
+}
+.joinIntro{
+	font-size: 16px;
+	line-height: 20px;
+	color: rgb(34,34,34)
+}
+.joinLogo{
+	display: inline-block;
+}
+
+.wrongPW{
+	display: flex;
+	border: 1px solid darkgray;
+	border-radius: 12px;
+	padding: 16px;
+	margin-bottom: 35px;
+}
+
+.wrongPW img{
+	width: 44px;
+}
+
+
+/*--------------------카카오 로그인-----------------------------------------*/
+
+.KakaoBtn{
+	background-color: white;
+	border:2px solid darkgray;
+	border-radius: 8px;
+	height:48px;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.KakaoBtn:hover{
+	border:2px solid black;
+}
+.KakaoBtn img{
+	margin-right:475px;
+	width:30px;
+	height: 30px;
+}
+.KakaoBtn p{
+	position:fixed;
+	font-weight: bold;
+	color:#484848;
+}
+.logout_kakao{
+	display: block;
+}
+
+/*--------------------네이버 로그인-----------------------------------------*/
+.naverBtn{
+	background-color: white;
+	border:2px solid darkgray;
+	border-radius: 8px;
+	height:48px;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin:16px 0px;
+}
+.naverBtn:hover{
+	border:2px solid black;
+}
+.naverBtn img{
+	margin-right:475px;
+	width:30px;
+	height: 30px;
+}
+.naverBtn p{
+	position:fixed;
+	font-weight: bold;
+	color:#484848;
+}
+
+.account_settings{
+	display:block;
+	padding:15px 10px;
+}
+
+.logoutTest{
+	display:block;
+	padding-top:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

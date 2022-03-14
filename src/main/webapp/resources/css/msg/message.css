@@ -1,0 +1,210 @@
+
+.middle_message{
+    display: flex;
+}
+
+.left_message{
+    
+    height: 70px;
+   	width: 25%;
+    padding-left: 30px;
+    padding-top:5px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+
+.body1_message{
+    position: relative;
+    width: 96.5%;
+    left: 1%;
+    top: 42%;
+    overflow-y: auto;
+    height: auto;
+	margin-top: 23px;
+}
+
+.center_message{
+	display:block;
+    width:100%;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 5px;
+    border-bottom: 1px solid #dadada;
+    height: 70px;
+
+ 
+}
+
+.head2_sub_message{
+	
+    height: 70px;
+    line-height: 60px;
+    margin: 0;
+	
+}
+
+.hidden{
+	visibility: hidden;
+	height: 0;
+}
+
+.hidden_message{
+	visibility: hidden;
+	height: 0;
+}
+
+.body2_message{
+    width: 101.8%;
+    height: 1260%;
+    border: 1px solid #dadada;
+        margin-left: -1.4%;
+}
+
+.bottom_message{
+       position: relative;
+    width: 35%;
+    top: -96%;
+    left: 34%;
+}
+
+
+.sender_message{
+	font-weight: 900;
+	font-size : 17px;
+}
+
+
+.time_message{
+	padding-left: 10px;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 26px;
+}
+
+
+#send_message{
+	width: 450px;
+	height: 50px;
+	border : 2px solid #dadada;
+	border-radius : 80px 80px 80px 80px;
+	padding: 0 10px;
+}
+
+.left_member_message{
+	display:flex;
+	margin-top:10px;
+	width: 100%;
+    height: 128px;
+	background-color: rgb(247, 247, 247);
+	border-radius : 5px 5px 5px 5px;
+	overflow: hidden;
+	cursor:pointer;
+}
+
+.button_message{
+	display:flex;
+	justify-content:center;
+}
+
+.label_message{
+	cursor : pointer;
+}
+
+#chooseFile_message{
+	visibility:hidden;
+}
+
+.insert_message{
+	    padding-left: 20px;
+    padding-top: 26px;
+}
+
+.content_message{
+	    padding-top: 11px;
+}
+.content_day_message{
+	font-size: 14px;
+	padding-top:5px;
+    color: #aaa;
+}
+
+.item_message{
+	padding-left: 35%;
+}
+
+.profile_message > img {
+	width: 70px;
+    height: 70px;
+    margin-left: 14px;
+    margin-top: 35px;
+    left: 38px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.profile2_message > img {
+	  height: 50px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.user_message{
+	padding-left: 15px;
+}
+.user_message2{
+	padding-left: 15px;
+	display : flex;
+}
+
+.profile_message_insert >img {
+	height: 50px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.hidden2 {
+	display :none;
+}
+
+
+
+.center_out_button{
+	border: 1px solid #dadada;
+	position: absolute;
+    top: 3%;
+    right: 2%;
+    width: 80px;
+    height: 35px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #eee;
+    cursor:pointer;
+}
+
+.center_out_button:hover{
+	background-color: #ccc;
+	border : 2px solid black;
+}
+
+.year_message{
+	margin-left: 60px;
+    margin-top: 60px;
+    padding-bottom: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.booking_confirm_btn {
+	width: 85px;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    border-radius: 10px;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+	"-//mybatis.org/DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.itbank.wish.WishDAO">
+	<insert id="insertWishHouse" parameterType="HashMap">
+		insert into wish_house 
+				(selector, name)
+			values 
+				(#{selector}, (select house.name from house where idx=${idx}))
+	</insert>
+	<insert id="insertWishActivity" parameterType="HashMap">
+		insert into wish_activity
+				(selector, name)
+			values 
+				(#{selector}, (select activity.name from activity where idx=${idx}))
+	</insert>
+	
+	<delete id="deleteWishHouse" parameterType="HashMap">
+		delete wish_house
+			where 
+				selector=#{selector} 
+				and name=(select house.name from house where idx=${idx})
+	</delete>
+	<delete id="deleteWishActivity" parameterType="HashMap">
+		delete wish_activity
+			where 
+				selector=#{selector} 
+				and name=(select activity.name from activity where idx=${idx})
+	</delete>
+	
+	<select id="selectWishHouseList" parameterType="String" resultType="wishDTO">
+		select wish_house.idx, selector, wish_house.name, house.idx as productIdx
+		    from wish_house, house 
+		    where selector=#{selector} and house.name = wish_house.name
+	</select>
+	<select id="selectWishActivityList" parameterType="String" resultType="wishDTO">
+		select wish_activity.idx, selector, wish_activity.name, activity.idx as productIdx
+		    from wish_activity, activity 
+		    where selector=#{selector} and activity.name = wish_activity.name
+	</select>
+</mapper>
